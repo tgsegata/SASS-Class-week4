@@ -1,14 +1,14 @@
 /* This is the original example. You can take all css styles from here. */
 
-body {
+/* body {
     font-family: Quando;
     font-size: 15px;
     color: #787878;
-}
-img {
+} */
+/* img {
     max-width: 100%;
     height: auto;
-}
+} */
 p {
     margin-bottom: 25px;
     line-height: 1.6em;
@@ -22,7 +22,7 @@ a {
 a:hover {
     color: #999999;
 }
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -35,8 +35,8 @@ h6 {
     line-height: 1.3em;
     word-wrap: break-word;
     color: #111111;
-}
-h1 {
+} */
+/* h1 {
     font-size: 37px;
 }
 h2 {
@@ -53,7 +53,7 @@ h5 {
 }
 h6 {
     font-size: 15px;
-}
+} */
 
 
 .container {
@@ -63,9 +63,9 @@ h6 {
 
 
 /* header and main nav */
-header {
+/* header {
     font-family: 'Josefin Sans', sans-serif;
-}
+} */
 header nav ul {
     display: none;
 }
