@@ -8,7 +8,9 @@
 
 
 // CREATING THE TAGS
-$colorFont: hsl(0, 0%, 47%);
+$colorFont: #787878;
+$colorFontLight: #999999;
+$colorFontDark: #111111;
 $colorSubtitle: #324360;
 $colorHover: #35c4ce;
 $colorBackground: #eaf2ff;
@@ -23,11 +25,7 @@ $fontH4: 21px;
 $fontH5: 18px;
 $fontH6: 15px;
 
-$font: (
-    font-family: 'Quando',
-    font-size: $fontH6,
-    color: $colorFont
-);
+$font: 'Quando';
 $fontSub: 'Josefin Sans', sans-serif;
 $fontSubSub: 'FontAwesome';
 $font-weight: 600;
@@ -45,7 +43,7 @@ $mobile-breakpoint: 650px;
     align-items: center;
 }
 @mixin titleFont {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: $fontSub;
     text-transform: uppercase;
     font-weight: $font-weight;
     text-decoration: none;
@@ -70,62 +68,49 @@ $mobile-breakpoint: 650px;
 p {
     margin-bottom: $margin + 15px;
     line-height: 1.6em;
+    @include fontStyle;
 }
-
 a {
     font-weight: $font-weight - 200;
     text-decoration: none;
-    color: darken($colorFont, 100%);
+    color: $colorFontDark;
     transition: .20s;
-
+    @include fontStyle;
     &:hover {
-        color: $colorFont;
+        color: $colorFontLight;
     }
 }
-
 body {
-    font-family: map-get($font, font-family);
-    font-size: map-get($font, font-size);
-    color: map-get($font, color);
-    @include fontStyle;
+    font-family: $font;
+    font-size: $fontH6;
+    color: $colorFont;
 }
-
 header {
-    @include titleFont;
-    @include centerStyle;
-    padding: $padding + 40px 0;
+    font: $fontSub;
 }
-
 header div {
     display: flex;
     flex-direction: column;
-    gap: $gap + 40px;
 }
-
 header nav ul {
     @include centerStyle;
     gap: $gap + 10px;
     display: none;
 }
-
 img {
     @include pictureStyle;
 }
-
 .container {
     width: 94%;
     margin: 0 auto;
 }
-
 .top-logo {
     width: 200px;
     margin: $margin + 5px auto $margin + 30px;
 }
-
 .post-title {
     margin-top: 0;
 }
-
 .post-title a {
     @include titleFont;
     color: $colorSubtitle;
@@ -135,23 +120,18 @@ img {
     margin-bottom: $margin - 5px;
     line-height: 1.3em;
     transition: all $transition-speed ease;
-
     &:hover {
         color: $colorHover;
     }
 }
-
 article {
     margin-bottom: $margin + 40px;
     display: flex;
     flex-wrap: wrap;
 }
-
 .image-part {
     margin-bottom: $margin;
 }
-
-
 /* footer */
 footer {
     padding: $padding + 20px 0;
@@ -160,27 +140,22 @@ footer {
     color: $colorFont;
     color: lightnen($colorFont, 13%);
 }
-
 #footer a {
-    color: lightnen($colorFont, 13%);
-
+    color: $colorFont;
     &:hover {
-        color: lightnen($colorFont, 53%);
+        color: $colorFontDark;
     }
 }
-
 .footer-logo {
     width: 200px;
     margin: $margin + 10px auto;
     text-align: center;
     vertical-align: middle;
 }
-
 .footer-social-links {
     padding: $padding + 10px 0;
     line-height: 2em;
 }
-
 .footer-social-links a {
     margin: 0 $margin;
     font-size: $fontH6 + 1px;
@@ -195,7 +170,7 @@ footer {
 #footer-copyright {
     padding: $padding + 10px 0;
     font-size: $fontH6 - 3px;
-    color: darken($colorFont, 20%)
+    color: $colorFontLight;
 }
 
 
@@ -265,7 +240,7 @@ footer {
     }
     header nav ul ul a {
         display: block;
-        color: darken($colorFont, 100%);
+        color: $colorFontDark;
         min-width: 175px;
         margin: 0;
         padding: $padding + 10px $padding;

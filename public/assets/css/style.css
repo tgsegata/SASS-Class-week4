@@ -5,46 +5,45 @@
 p {
   margin-bottom: 25px;
   line-height: 1.6em;
-}
-
-a {
-  font-weight: 400;
-  text-decoration: none;
-  color: hsl(0, 0%, 0%);
-  transition: 0.2s;
-}
-a:hover {
-  color: hsl(0, 0%, 47%);
-}
-
-body {
-  font-family: "Quando";
-  font-size: 15px;
-  color: hsl(0, 0%, 47%);
   margin-top: 25px;
   margin-bottom: 20px;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   line-height: 1.3em;
   word-wrap: break-word;
-  color: hsl(0, 0%, 0%);
+  color: black;
+}
+
+a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #111111;
+  transition: 0.2s;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.3em;
+  word-wrap: break-word;
+  color: black;
+}
+a:hover {
+  color: #999999;
+}
+
+body {
+  font-family: "Quando";
+  font-size: 15px;
+  color: #787878;
 }
 
 header {
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
+  font: "Josefin Sans", sans-serif;
 }
 
 header div {
   display: flex;
   flex-direction: column;
-  gap: 50px;
 }
 
 header nav ul {
@@ -107,15 +106,15 @@ footer {
   padding: 30px 0;
   text-align: center;
   background: #eaf2ff;
-  color: hsl(0, 0%, 47%);
-  color: lightnen(hsl(0, 0%, 47%), 13%);
+  color: #787878;
+  color: lightnen(#787878, 13%);
 }
 
 #footer a {
-  color: lightnen(hsl(0, 0%, 47%), 13%);
+  color: #787878;
 }
 #footer a:hover {
-  color: lightnen(hsl(0, 0%, 47%), 53%);
+  color: #111111;
 }
 
 .footer-logo {
@@ -144,7 +143,7 @@ footer {
 #footer-copyright {
   padding: 20px 0;
   font-size: 12px;
-  color: hsl(0, 0%, 27%);
+  color: #999999;
 }
 
 @media (min-width: 650px) {
@@ -209,7 +208,7 @@ footer {
   }
   header nav ul ul a {
     display: block;
-    color: hsl(0, 0%, 0%);
+    color: #111111;
     min-width: 175px;
     margin: 0;
     padding: 20px 10px;
@@ -219,7 +218,7 @@ footer {
   }
   header nav ul ul a :hover {
     background: #ffffff;
-    color: hsl(0, 0%, 0%);
+    color: black;
   }
   /* posts */
   article {
