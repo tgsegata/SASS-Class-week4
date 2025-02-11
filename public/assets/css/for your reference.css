@@ -56,24 +56,24 @@ h6 {
 } */
 
 
-.container {
+/* .container {
     width: 94%;
     margin: 0 auto;
-}
+} */
 
 
 /* header and main nav */
 /* header {
     font-family: 'Josefin Sans', sans-serif;
 } */
-header nav ul {
+/* header nav ul {
     display: none;
-}
+} */
 
-.top-logo {
+/* .top-logo {
     width: 200px;
     margin: 20px auto 40px;
-}
+} */
 
 
 
@@ -90,7 +90,7 @@ article {
 .post-title {
     margin-top: 0;
 }
-.post-title a {
+/* .post-title a {
     color: #324360;
     text-transform: uppercase;
     font-size: 26px;
@@ -102,7 +102,7 @@ article {
 }
 .post-title a:hover {
     color: #35c4ce;
-}
+} */
 
 
 

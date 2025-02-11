@@ -10,7 +10,7 @@
 // CREATING THE TAGS
 $font: (
     font-family: 'Quando',
-    font-size: 15px,
+    font-size: $fontH6,
     color: #787878
 );
 
@@ -20,6 +20,9 @@ $fontH3: 26px;
 $fontH4: 21px;
 $fontH5: 18px;
 $fontH6: 15px;
+
+$transition-speed: 0.3s;
+$mobile-breakpoint: 650px;
 
 @mixin centerStyle {
     display: flex;
@@ -70,8 +73,46 @@ header div {
 header nav ul {
     @include centerStyle;
     gap: 20px;
+    display: none;
 }
 img {
     @include pictureStyle;
 }
+
+.container {
+    width: 94%;
+    margin: 0 auto;
+}
+.top-logo {
+    width: 200px;
+    margin: 20px auto 40px;
+}
+
+
+.post-title a {
+    color: #324360;
+    text-transform: $titleFont;
+    font-size: $fontH3;
+    font-weight: $titleFont + 300;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.3em;
+    transition: all $transition-speed ease;
+    
+    &:hover {
+            color: #35c4ce;
+        }
+}
+
+
+
+
+@media (min-width: $mobile-breakpoint) {
+    header nav ul {
+        display: flex;
+    }
+
+
+  }
+
 

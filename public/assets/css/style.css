@@ -1,48 +1,17 @@
-.menu-item-has-children li {
-  display: none;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 13 |     font-size: $fontH6,
+ *    |                ^^^^^^^
+ *    '
+ *   src/scss/style.scss 13:16  root stylesheet */
 
-body {
-  font-family: "Quando";
-  font-size: 15px;
-  color: #787878;
-  margin-top: 25px;
-  margin-bottom: 20px;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
-  line-height: 1.3em;
-  word-wrap: break-word;
-  color: #111111;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 13 \2502      font-size: $fontH6,\a    \2502                 ^^^^^^^\a    \2575 \a   src/scss/style.scss 13:16  root stylesheet";
 }
-
-header {
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
-}
-
-header div {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-header nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-img {
-  object-fit: contain;
-  max-width: 100%;
-  height: auto;
-}
-
-/*# sourceMappingURL=style.css.map */
