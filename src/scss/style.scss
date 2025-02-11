@@ -8,11 +8,9 @@
 
 
 // CREATING THE TAGS
-$font: (
-    font-family: 'Quando',
-    font-size: $fontH6,
-    color: #787878
-);
+$colorFont: #787878;
+$colorSubtitle: #324360;
+$colorHover: #35c4ce;
 
 $fontH1: 37px;
 $fontH2: 31px;
@@ -20,6 +18,16 @@ $fontH3: 26px;
 $fontH4: 21px;
 $fontH5: 18px;
 $fontH6: 15px;
+
+$font: (
+    font-family: 'Quando',
+    font-size: $fontH6,
+    color: $colorFont
+);
+
+$font-weight: 600;
+
+$margin: 15px;
 
 $transition-speed: 0.3s;
 $mobile-breakpoint: 650px;
@@ -85,22 +93,22 @@ img {
 }
 .top-logo {
     width: 200px;
-    margin: 20px auto 40px;
+    margin: $margin + 5px auto $margin + 25px;
 }
 
 
 .post-title a {
-    color: #324360;
-    text-transform: $titleFont;
+    @include titleFont;
+    color: $colorSubtitle;
     font-size: $fontH3;
-    font-weight: $titleFont + 300;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    font-weight: $font-weight + 300;
+    margin-top: $margin;
+    margin-bottom: $margin;
     line-height: 1.3em;
     transition: all $transition-speed ease;
     
     &:hover {
-            color: #35c4ce;
+            color: $colorHover;
         }
 }
 
